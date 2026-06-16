@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenzia Viaggi</title>
+    <link rel="stylesheet" href="agenziaViaggi.css">
+</head>
+<body>
+    <header id="intestazione">
+        <div class="immagine-titolo">
+            <h3>Prenota la tua vacanza ☀️</h3>
+            <nav id="navigazione">
+            <ul>
+                <li><a href="#chi-siamo">Chi siamo</a></li>
+                <li><a href="#offerte">Offerte</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="chi-siamo">
+        <div id="riquadro-chisiamo">
+            <h3>Chi siamo</h3>
+            <p>Siamo un'agenzia di viaggi nata dalla passione per l'esplorazione e dalla voglia di far vivere esperienze indimenticabili. Da anni accompagniamo i nostri clienti alla scoperta di destinazioni vicine e lontane, costruendo ogni viaggio su misura, con cura e attenzione per ogni dettaglio.
+            Il nostro team è composto da viaggiatori appassionati prima ancora che da professionisti: conosciamo le mete che proponiamo perché le abbiamo vissute in prima persona, e questo ci permette di consigliarti con sincerità e competenza.
+            Crediamo che ogni viaggio sia unico come la persona che lo intraprende. Per questo ascoltiamo i tuoi desideri, il tuo budget e le tue aspettative, per trasformarli in un'esperienza che superi ogni aspettativa.</p>
+            <h6>Affidati a noi: il tuo prossimo viaggio inizia qui.</h6>
+        </div>
+        <div id="cornici">
+            <div id="cornice-uno"></div>
+            <div id="cornice-due"></div>
+            <div id="cornice-tre"></div>
+        </div>
+    </section>
+    <section id="offerte">
+        <h3>Offerte</h3>
+        <div id="contenitore-card">
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/mykonos.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Mykonos:</b> Isola greca famosa per le sue spiagge dorate, il mare cristallino e la vivace vita notturna.</p>
+                    <h6>€899</h6>
+                    <button onclick="apriInfo('mykonos')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/cortina.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Cortina d'Ampezzo:</b> Perla delle Dolomiti, ideale per escursioni panoramiche e relax immersi nella natura.</p>
+                    <h6>€749</h6>
+                    <button onclick="apriInfo('cortina')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/paris.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Parigi:</b> La città dell'amore, ricca di monumenti iconici, arte e raffinata gastronomia.</p>
+                    <h6>€599</h6>
+                    <button onclick="apriInfo('parigi')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/sardegna.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Sardegna:</b> Acque turchesi, spiagge incontaminate e paesaggi mozzafiato nel cuore del Mediterraneo.</p>
+                    <h6>€799</h6>
+                    <button onclick="apriInfo('sardegna')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/chamo.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Chamonix:</b> Affascinante località alpina ai piedi del Monte Bianco, perfetta per sport e avventura.</p>
+                    <h6>€689</h6>
+                    <button onclick="apriInfo('chamonix')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/barcellona.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Barcellona:</b> Una città vibrante dove architettura, cultura e mare si incontrano in un'atmosfera unica.</p>
+                    <h6>€549</h6>
+                    <button onclick="apriInfo('barcellona')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/maldive.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Maldive:</b> Un paradiso tropicale con lagune cristalline, resort esclusivi e spiagge da sogno.</p>
+                    <h6>€1499</h6>
+                    <button onclick="apriInfo('maldive')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/madoCamp.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p class="dettagli"><b>Madonna di Campiglio:</b> Elegante destinazione montana immersa nelle Dolomiti del Brenta.</p>
+                    <h6 class="offerta">€729</h6>
+                    <button onclick="apriInfo('madonna')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/Londra.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Londra:</b> Capitale cosmopolita ricca di storia, musei, quartieri caratteristici e attrazioni famose.</p>
+                    <h6>€649</h6>
+                    <button onclick="apriInfo('londra')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/ibiza.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Ibiza:</b> Mare spettacolare, calette nascoste e una delle scene notturne più famose d'Europa.</p>
+                    <h6>€849</h6>
+                    <button onclick="apriInfo('ibiza')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/Zermatt.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Zermatt</b>: Incantevole villaggio svizzero dominato dalla spettacolare vista del Cervino.</p>
+                    <h6>999€</h6>
+                    <button onclick="apriInfo('zermatt')">Info</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenitore-img"><img src="./immaginiAgenziaViaggi/praga.jpg" alt=""></div>
+                <div class="dettagli-offerta">
+                    <p><b>Praga:</b> Città dal fascino medievale con castelli, ponti storici e un'atmosfera romantica.</p>
+                    <h6>499€</h6>
+                    <button onclick="apriInfo('praga')">Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contatti">
+        <div id='contenitore-contatti'>
+            <div>
+                <h6>Indirizzo:</h6>
+                <p>Via Roma 24, 00184 Roma (RM)</p>
+            </div>
+            <div>
+                <h6>Telefono:</h6>
+                <p>+39 06 1234567</p>
+            </div>
+            <div>
+                <h6>Email:</h6>
+                <a href="mailto:info@agenziaViaggi.it">info@agenziaViaggi.it</a>
+            </div>
+            <div>
+                <h6>orari:</h6>
+                <p>Lun - Ven: 9:00 - 18:00 <br>
+                Sab: 9:00 - 13:00<br>
+                Dom: Chiuso</p>
+            </div>
+            <div>
+                <h6>Social:</h6>
+                <p><a href="https://www.facebook.com"><img src="./immaginiAgenziaViaggi/icons8-facebook.gif" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./immaginiAgenziaViaggi/icons8-instagram.gif" alt=""></a>
+                <a href="https://www.whatsapp.com"><img src="./immaginiAgenziaViaggi/icons8-whatsapp.gif" alt=""></a></p>
+            </div> 
+        </div>
+    </section>
+    <footer id="pie-pagina">
+        <p>© 2026 Agenzia Viaggi</p>
+    </footer>
+
+    <div id="info" class="nascosto">
+    <div class="info-contenuto">
+        <button onclick="chiudiInfo()">✕</button>
+        <h3 id="info-titolo"></h3>
+        <p id="info-descrizione"></p>
+        <p id="info-prezzo"></p>
+    </div>
+</div>
+</body>
+<script>
+    const offerte = {
+    mykonos: {
+        titolo: "Mykonos",
+        prezzo: "899€",
+        descrizione: "7 giorni nell'isola più glamour della Grecia. Volo incluso, hotel 4 stelle fronte mare, spiagge cristalline e tramonti mozzafiato. Partenze ogni venerdì da Roma."
+    },
+    cortina: {
+        titolo: "Cortina d'Ampezzo",
+        prezzo: "749€",
+        descrizione: "6 giorni tra le Dolomiti patrimonio UNESCO. Hotel 4 stelle con spa, skipass incluso, paesaggi invernali da cartolina. Ideale per gli amanti della montagna e dello sci."
+    },
+    parigi: {
+        titolo: "Parigi",
+        prezzo: "599€",
+        descrizione: "5 giorni nella città dell'amore. Volo incluso, hotel nel cuore di Montmartre, visita guidata alla Torre Eiffel e al Louvre. Un'esperienza indimenticabile per coppie e famiglie."
+    },
+    sardegna: {
+        titolo: "Sardegna",
+        prezzo: "799€",
+        descrizione: "8 giorni nell'isola dal mare più bello d'Italia. Resort 4 stelle all inclusive, spiagge di sabbia bianca, escursioni in barca e cucina tipica sarda inclusa."
+    },
+    chamonix: {
+        titolo: "Chamonix",
+        prezzo: "689€",
+        descrizione: "6 giorni ai piedi del Monte Bianco. Hotel 3 stelle con vista sulle Alpi, skipass incluso, escursione sul ghiacciaio Mer de Glace. La meta perfetta per gli amanti dell'avventura."
+    },
+    barcellona: {
+        titolo: "Barcellona",
+        prezzo: "549€",
+        descrizione: "5 giorni nella capitale della Catalogna. Volo incluso, hotel 4 stelle nel centro storico, visita alla Sagrada Família, Las Ramblas e spiagge urbane. Arte, cultura e divertimento."
+    },
+    maldive: {
+        titolo: "Maldive",
+        prezzo: "1499€",
+        descrizione: "10 giorni nel paradiso dell'Oceano Indiano. Volo incluso, resort 5 stelle su acqua con bungalow privato, colazione e cena incluse, snorkeling e immersioni tra barriere coralline."
+    },
+    madonna: {
+        titolo: "Madonna di Campiglio",
+        prezzo: "729€",
+        descrizione: "6 giorni nella perla delle Dolomiti di Brenta. Hotel 4 stelle con centro benessere, skipass per 150km di piste, noleggio sci incluso e serata tipica trentina con degustazione."
+    },
+    londra: {
+        titolo: "Londra",
+        prezzo: "649€",
+        descrizione: "5 giorni nella capitale britannica. Volo incluso, hotel 3 stelle a due passi dal centro, visita al British Museum, Tower Bridge e Buckingham Palace. La città che non dorme mai."
+    },
+    ibiza: {
+        titolo: "Ibiza",
+        prezzo: "849€",
+        descrizione: "7 giorni sull'isola bianca delle Baleari. Volo incluso, hotel 4 stelle con piscina, spiagge selvagge di giorno e vita notturna leggendaria. La meta ideale per chi vuole divertirsi."
+    },
+    zermatt: {
+        titolo: "Zermatt",
+        prezzo: "999€",
+        descrizione: "7 giorni ai piedi del Cervino in Svizzera. Hotel 4 stelle in un villaggio senza auto, skipass illimitato su 360km di piste, fondue e raclette tipiche incluse nella mezza pensione."
+    },
+    praga: {
+        titolo: "Praga",
+        prezzo: "499€",
+        descrizione: "4 giorni nella città d'oro della Boemia. Volo incluso, hotel 3 stelle nel centro storico, visita al Castello, al Ponte Carlo e alla Città Vecchia. La meta più economica e affascinante d'Europa."
+    }
+}
+
+function apriInfo(destinazione){
+    document.getElementById('info-titolo').textContent = offerte[destinazione].titolo;
+    document.getElementById('info-descrizione').textContent = offerte[destinazione].descrizione;
+    document.getElementById('info-prezzo').textContent ='A partire da: '+ offerte[destinazione].prezzo;
+    document.getElementById('info').classList.add('attivo');
+}
+
+function chiudiInfo() {
+    document.getElementById('info').classList.remove('attivo');
+}
+
+</script>
+</html>
